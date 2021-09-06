@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Flappy Dark</title>
+<meta name="description" content="Flappy Dark-Html5 Game">
+<meta name="keywords" content="Flappy Dark,Html5 Game">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+
+<link href='css/game.css' rel='stylesheet' type='text/css'>
+
+<script src="js/modernizr.min.js"></script>
+<script src="lib/plugins/underscore.js"></script>
+<script src="lib/plugins/greensock/TweenMax.js"></script>
+<script src="lib/plugins/ImpactPool.js"></script>
+<script src="lib/impact/impact.js"></script>
+<script src="lib/game/main.js"></script>
+<script src="js/startup.js"></script>
+<script src="/vkBridge.js"></script>
+<script>vkBridge.send('VKWebAppInit');</script>
+
+
+</head>
+<body>
+    <a href="/Game-File/144.html">
+        <button id="playBtn" onclick="playBtnClicked();">Play</button> </a>
+    
+<div id="wrapper">
+	<canvas id="canvas"></canvas>
+</div>
+
+<script>
+
+	GameStartup.init(); 
+</script>
+
+</body>
+</html>
